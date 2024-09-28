@@ -43,3 +43,7 @@ fig.tight_layout()
 
 st.pyplot(fig)
 
+fig, axes = plt.subplots()
+axes.hist(x)
+axes.set(xlabel='Количество посещаемых')
+st.pyplot(fig)
