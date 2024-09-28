@@ -4,4 +4,5 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as snb
 
+st.title("Исследование данных из датасета")
 
