@@ -47,3 +47,17 @@ fig, axes = plt.subplots()
 axes.hist(x)
 axes.set(xlabel='Количество посещаемых')
 st.pyplot(fig)
+
+st.subheader('Зависит ли сон на обучающегося')
+
+x = df['Sleep_Hours'].copy()
+y = df['Exam_Score'].copy()
+fig, axes = plt.subplots(figsize=(10, 5))
+axes.scatter(x, y)
+axes.set_xlabel('Среднее количество часов сна за ночь', fontsize=15)
+axes.set_ylabel('Итоговый балл экзамена Exam_Score', fontsize=15)
+
+axes.grid(True)
+fig.tight_layout()
+
+st.pyplot(fig)
