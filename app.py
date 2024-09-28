@@ -41,6 +41,5 @@ axes.set_ylabel('Итоговый балл экзамена Exam_Score', fontsiz
 axes.grid(True)
 fig.tight_layout()
 
-plt.show()
 st.pyplot(fig)
 
