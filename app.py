@@ -76,3 +76,18 @@ axes.grid(True)
 fig.tight_layout()
 
 st.pyplot(fig)
+
+st.subheader('Зависимость самообразования на количество сна')
+
+x = df['Sleep_Hours'].copy()
+y = df['Hours_Studied'].copy()
+fig, axes = plt.subplots(figsize=(10, 10))
+axes.scatter(x, y)
+# axes.set_title("Посещаемость учащихся")
+axes.set_xlabel('Сон', fontsize=15)
+axes.set_ylabel('Самообразование', fontsize=15)
+
+axes.grid(True)
+fig.tight_layout()
+
+st.pyplot(fig)
