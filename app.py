@@ -6,3 +6,8 @@ import seaborn as snb
 
 st.title("Исследование данных из датасета")
 
+df = pd.read_csv('StudentPerformanceFactors.csv')
+df.dropna()
+
+
+
