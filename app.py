@@ -61,3 +61,18 @@ axes.grid(True)
 fig.tight_layout()
 
 st.pyplot(fig)
+
+st.subheader('Влияние самообразования на успеваемость')
+
+x = df['Hours_Studied'].copy()
+y = df['Exam_Score'].copy()
+fig, axes = plt.subplots(figsize=(10, 10))
+axes.scatter(x, y)
+# axes.set_title("Посещаемость учащихся")
+axes.set_xlabel('Самообразование', fontsize=15)
+axes.set_ylabel('Итоговый балл экзамена Exam_Score', fontsize=15)
+
+axes.grid(True)
+fig.tight_layout()
+
+st.pyplot(fig)
