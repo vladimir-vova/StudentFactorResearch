@@ -91,3 +91,16 @@ axes.grid(True)
 fig.tight_layout()
 
 st.pyplot(fig)
+
+st.subheader('Зависимость сна на самообрзование и данные средней оценки')
+
+fig = plt.figure(figsize=(10,5), dpi=200)
+snb.scatterplot(x="Sleep_Hours", y="Hours_Studied", data=df, hue="Exam_Score")
+
+st.pyplot(fig)
+
+st.subheader('Завимость сна на оценку от пола')
+
+fig = plt.figure(figsize=(15, 10))
+snb.boxplot(data=df, x='Sleep_Hours', y='Exam_Score', hue='Gender')
+st.pyplot(fig)
